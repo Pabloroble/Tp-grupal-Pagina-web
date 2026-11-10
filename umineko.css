@@ -1,0 +1,218 @@
+:root {
+    --umineko-night: #211811;
+    --umineko-brown: #39271b;
+    --umineko-wood: #694522;
+    --umineko-gold: #d3ad5b;
+    --umineko-pale-gold: #f0d998;
+    --umineko-parchment: #f2e7ce;
+    --umineko-ink: #302215;
+}
+
+body {
+    color: var(--umineko-parchment);
+    background:
+        radial-gradient(ellipse at top, rgba(105, 69, 34, 0.3), transparent 55%),
+        var(--umineko-night);
+}
+
+.navbar.navbar-light {
+    background-color: var(--umineko-brown) !important;
+    border-bottom: 2px solid var(--umineko-gold);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: var(--umineko-pale-gold);
+}
+
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #fff3cf;
+}
+
+.navbar .navbar-toggler {
+    border-color: var(--umineko-gold);
+}
+
+.navbar .navbar-toggler-icon {
+    filter: sepia(1) saturate(2);
+}
+
+.dropdown-menu {
+    background-color: var(--umineko-parchment);
+    border-color: var(--umineko-gold);
+}
+
+.dropdown-item {
+    color: var(--umineko-ink);
+}
+
+.dropdown-item:hover {
+    color: var(--umineko-ink);
+    background-color: #e7d3a6;
+}
+
+header.bg-dark {
+    background: linear-gradient(115deg, #24170f, #694522 55%, #302016) !important;
+    border-bottom: 1px solid var(--umineko-gold);
+}
+
+header h1 {
+    color: var(--umineko-pale-gold);
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+header .lead {
+    color: #ead9b5 !important;
+}
+
+section {
+    background: linear-gradient(180deg, rgba(33, 24, 17, 0.2), rgba(15, 11, 8, 0.55));
+}
+
+.about-section {
+    scroll-margin-top: 1rem;
+}
+
+.about-card {
+    max-width: 760px;
+    color: var(--umineko-ink);
+    background-color: var(--umineko-parchment);
+    border: 1px solid var(--umineko-gold);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.about-card h2 {
+    color: var(--umineko-wood);
+}
+
+.about-eyebrow {
+    color: #806020;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.card {
+    color: var(--umineko-ink);
+    background-color: var(--umineko-parchment);
+    border: 1px solid var(--umineko-gold);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(105, 69, 34, 0.35);
+}
+
+.card .text-muted {
+    color: #77664d !important;
+}
+
+.card .text-warning {
+    color: #a57920 !important;
+}
+
+.badge.bg-dark {
+    color: var(--umineko-night) !important;
+    background-color: var(--umineko-gold) !important;
+}
+
+.btn-outline-dark {
+    color: var(--umineko-ink);
+    border-color: var(--umineko-wood);
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
+    color: var(--umineko-night);
+    background-color: var(--umineko-gold);
+    border-color: var(--umineko-gold);
+}
+
+.navbar .btn-outline-dark {
+    color: var(--umineko-night);
+    background-color: var(--umineko-pale-gold);
+    border-color: var(--umineko-pale-gold);
+}
+
+.navbar .btn-outline-dark:hover,
+.navbar .btn-outline-dark:focus {
+    color: var(--umineko-night);
+    background-color: var(--umineko-gold);
+    border-color: var(--umineko-gold);
+}
+
+#cartModal .modal-content {
+    color: var(--umineko-ink);
+    --bs-modal-bg: #ffffff;
+    background-color: #ffffff;
+    border: 1px solid var(--umineko-gold);
+}
+
+#cartModal .modal-header,
+#cartModal .modal-footer,
+#cartModal .modal-body {
+    background-color: #ffffff;
+    border-color: rgba(105, 69, 34, 0.3);
+}
+
+#cartModal .cart-empty {
+    padding: 1rem;
+    color: var(--umineko-ink);
+    background-color: #ffffff;
+}
+
+#cartModal .btn-close {
+    filter: sepia(1) saturate(2);
+}
+
+.cart-items .list-group-item {
+    color: var(--umineko-ink);
+    background-color: transparent;
+    border-color: rgba(105, 69, 34, 0.25);
+}
+
+.cart-item-image {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+    object-fit: cover;
+    border: 1px solid var(--umineko-gold);
+    border-radius: 0.25rem;
+}
+
+.cart-total {
+    color: var(--umineko-ink);
+    font-weight: 700;
+    text-align: right;
+}
+
+.cart-storage-warning {
+    color: #70430e;
+    font-size: 0.9rem;
+}
+
+footer.bg-dark {
+    background-color: #170f0a !important;
+    border-top: 2px solid var(--umineko-gold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        transition: none;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+}
